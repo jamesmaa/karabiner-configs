@@ -529,7 +529,7 @@
                         ]
                     },
                     {
-                        "description": "Right shift brackets",
+                        "description": "Right shift symbols",
                         "manipulators": [
                             {
                                 "from": {
@@ -631,6 +631,58 @@
                                     {
                                         "key_code": "equal_sign",
                                         "modifiers": "left_shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "backslash",
+                                        "modifiers": "left_shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "backslash"
                                     }
                                 ],
                                 "type": "basic"
@@ -766,6 +818,14 @@
                             },
                             "to": {
                                 "key_code": "left_alt"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_alt"
+                            },
+                            "to": {
+                                "key_code": "right_command"
                             }
                         }
                     ]
@@ -1023,7 +1083,7 @@
                     }
                 }
             ],
-            "name": "",
+            "name": "Normal",
             "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
